@@ -2,8 +2,10 @@
 
 Проект реализован в рамках курса  `Яндекс.Практикум`
 
+[PULL - REQUEST](https://github.com/Katunya/middle.messenger.praktikum.yandex/pull/1)
+
 ## Деплой
-Проект выложен на Netify
+Проект выложен на "Netify"
 
 Посмотреть: [Мессенджер](https://joyful-gumption-64dbbc.netlify.app)
 
