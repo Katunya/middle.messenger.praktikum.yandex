@@ -1,0 +1,102 @@
+:root {
+    /* Colors */
+    --black: #000;
+    --white: #fff;
+
+    --midnight-color-01: #000000;
+    --midnight-color-02: #1F1F22;
+    --midnight-color-03: #696E72;
+    --midnight-color-04: #CED1D5;
+    --midnight-color-05: #F0F3F6;
+    --midnight-color-06: #2d2d2d;
+
+    --sky-color-01: #0F5498;
+    --sky-color-02: #1358BF;
+    --sky-color-03: #198CFE;
+    --sky-color-04: #93B7ED;
+    --sky-color-05: #F2F8FF;
+
+    --ruby-color-01: #A80E2A;
+    --ruby-color-02: #C11030;
+    --ruby-color-03: #DB1237;
+    --ruby-color-04: #FFBDC5;
+    --ruby-color-05: #FFE5E8;
+
+    --malachite-color-01: #005E7F;
+    --malachite-color-02: #107F8C;
+    --malachite-color-03: #21A19A;
+    --malachite-color-04: #94F1DA;
+    --malachite-color-05: #BEF8EC;
+
+    --emerald-color-01: #1F8468;
+    --emerald-color-02: #209F6D;
+    --emerald-color-03: #21BA72;
+    --emerald-color-04: #44D370;
+    --emerald-color-05: #C6F4C6;
+
+    /* Border */
+    --border-radius-base: 8px;
+    --border-width-base: 2px;
+
+    /* Text */
+    --font-size-xxxl: 40px;
+    --font-size-xxl: 32px;
+    --font-size-xl: 24px;
+    --font-size-lg: 20px;
+    --font-size-md: 16px;
+    --font-size-sm: 14px;
+    --font-size-xs: 12px;
+    --font-size-xxs: 9px;
+
+    /* Text line-height */
+    --line-height-xxxl: --font-size-xxxl + 12;
+    --line-height-xxl: --font-size-xxl + 12;
+    --line-height-xl: --font-size-xl + 12;
+    --line-height-lg: --font-size-lg + 12;
+    --line-height-md: --font-size-md + 10;
+    --line-height-sm: --font-size-sm + 10;
+    --line-height-xs: --font-size-xs + 8;
+    --line-height-xxs: --font-size-xxs + 6;
+
+    /* base */
+    --font-size-base: --font-size-md;
+    --line-height-base: --line-height-md;
+
+    --text-light-color: --white;
+    --text-dark-color: --black;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    --alert-color: --ruby-color-03;
+    --success-color: #21BA72;
+    --link-color: --sky-color-02;
+
+
+    /* button */
+    --btn-text: var(--white);
+    --btn-bg: var(--emerald-color-02);
+    --btn-hover-bg: var(--emerald-color-03);
+    --btn-active-bg: var(--emerald-color-01);
+
+    --btn-line-height-base: --line-height-base;
+    --btn-font-size-base: --font-size-base;
+    --btn-border-radius-base: 30px;
+    --btn-border-width-base: --border-width-base;
+
+    /* sidebar */
+    --sidebar-background: #FBFBFB;
+
+    /* dialog */
+    --dialog-hover: #87909c1a;
+    --dialog-active: #87909c33;
+
+    /* default */
+    --border-color: #EAEAEA;
+
+    /* dase easing effect */
+    --ease-in-out-base: cubic-bezier(.8, 0, .2, 1);
+
+    /* duration */
+    --animation-duration-base: .2s;
+}

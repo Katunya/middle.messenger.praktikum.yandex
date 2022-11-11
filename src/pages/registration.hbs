@@ -1,0 +1,85 @@
+---
+styles: ../styles/pages/registration.css
+
+meta:
+description: Регистрация в чате
+title: Registration
+
+legend:
+legendText: Регистрация
+
+inputs:
+- input:
+    label: Почта
+    ID: mail
+    type: email
+    error: Неверный email
+- input:
+    label: Логин
+    ID: login
+    type: text
+    error: Неверный логин
+- input:
+    label: Имя
+    ID: first_name
+    type: text
+    error: Неверное имя
+- input:
+    label: Фамилия
+    ID: second_name
+    type: text
+    error: Неверная фамилия
+- input:
+    label: Телефон
+    ID: phone
+    type: phone
+    error: Неверный телефон
+- input:
+    label: Пароль
+    ID: password
+    type: password
+    error: Короткий пароль
+- input:
+    label: Пароль (ещё раз)
+    ID: password
+    type: password
+    error: Пароли не совпадают
+
+button:
+    className: 'registration-button'
+    text: Зарегистрироваться
+    type: submit
+link:
+    href: '/'
+    text: Войти
+---
+{{#extend "main"}}
+    {{#content "main"}}
+            <main class="main">
+                <section class="grid">
+                    <div class="row row-center">
+                        <div class="column column-xs-3">
+                            <div class="form-wrapper">
+                                <h1 class="registration-title">Регистрация</h1>
+                                <form
+                                        action="*"
+                                        method="POST"
+                                        id="registration"
+                                        class="form">
+                                        <div>
+                                            {{#each inputs}}
+                                                {{>input}}
+                                            {{/each}}
+                                        </div>
+
+                                    {{>button}}
+                                </form>
+
+                                {{>link}}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,38 @@
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+
+    color: var(--emerald-color-02);
+}
+
+.link:hover {
+    color: var(--emerald-color-03);
+}
+
+.link:active {
+    color: var(--emerald-color-01);
+}
+
+.profile-link {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+
+    gap: 8px;
+    align-items: center;
+    justify-content: end;
+}
+
+.link-error {
+    color: var(--ruby-color-02)
+}
+
+.link-error:hover {
+    color: var(--ruby-color-03)
+}
+
+.link-error:active {
+    color: var(--ruby-color-01)
+}
