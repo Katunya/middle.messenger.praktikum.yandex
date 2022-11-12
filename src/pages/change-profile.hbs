@@ -4,7 +4,6 @@ meta:
     title: Change data profile
 
 styles: ../styles/pages/change-profile.css
-scripts: ../scripts/index.js
 
 sidebar:
     href: ./chat.hbs
@@ -12,37 +11,37 @@ sidebar:
 fields:
     - profile-form-field:
         label: Почта
-        ID: email
+        ID: email-change-profile
         name: email
         value: pochta@yandex.ru
         type: email
     - profile-form-field:
         label: Логин
-        ID: login
+        ID: login-change-profile
         name: login
         value: ivanivanov
         type: text
     - profile-form-field:
         label: Имя
-        ID: name
+        ID: name-change-profile
         name: name
         value: Иван
         type: text
     - profile-form-field:
         label: Фамилия
-        ID: surname
+        ID: surname-change-profile
         name: surname
         value: Иванов
         type: text
     - profile-form-field:
         label: Имя в чате
-        ID: displayname
+        ID: displayname-change-profile
         name: displayname
         value: Иван
         type: text
     - profile-form-field:
         label: Телефон
-        ID: phone
+        ID: phone-change-profile
         name: phone
         value: +7 (909) 967 30 30
         type: tel
@@ -50,7 +49,7 @@ fields:
 button:
     text: Сохранить
     type: submit
-    id: 'save'
+    id: save-change-profile
     className: 'button-save'
 ---
 

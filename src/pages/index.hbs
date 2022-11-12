@@ -1,0 +1,25 @@
+---
+meta:
+    description: Разветвляющаяся страница
+    title: Branching page
+
+styles: ../styles/index.css
+
+---
+
+{{#extend "main"}}
+    {{#content "main"}}
+        <nav class="menu">
+            <ul>
+                <li><a href="auth.hbs">Авторизация</a></li>
+                <li><a href="registration.hbs">Регистрация</a></li>
+                <li><a href="chat.hbs">Чат</a></li>
+                <li><a href="profile.hbs">Профиль</a></li>
+                <li><a href="change-password.hbs">Изменение пароля</a></li>
+                <li><a href="change-profile.hbs">Изменение данных профиля</a></li>
+                <li><a href="404.hbs">404</a></li>
+                <li><a href="505.hbs">505</a></li>
+            </ul>
+        </nav>
+    {{/content}}
+{{/extend}}

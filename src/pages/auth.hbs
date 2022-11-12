@@ -1,39 +1,40 @@
 ---
-styles: styles/pages/auth.css
-scripts: scripts/index.js
+
+meta:
+    description: Страница авторизации
+    title: Authorization
+
+styles: ../styles/pages/auth.css
 
 button:
     text: Авторизоваться
     type: submit
-    id: auth
+    id: button-auth
     className: auth-button
 
 inputs:
-- input:
-    label: Логин
-    ID: login
-    name: login
-    type: text
-    error: Неверный логин
-    placeholder: Введите логин
-- input:
-    label: Пароль
-    ID: password
-    name: password
-    type: password
-    error: Неверный пароль
-    placeholder: Введите пароль
+    - input:
+        label: Логин
+        ID: login-profile
+        name: login
+        type: text
+        error: Неверный логин
+        placeholder: Введите логин
+    - input:
+        label: Пароль
+        ID: password-profile
+        name: password
+        type: password
+        error: Неверный пароль
+        placeholder: Введите пароль
 
 link:
     text: Нет аккаунта?
-    href: 'pages/registration.hbs'
+    href: './registration.hbs'
+
 ---
 {{#extend "main"}}
     {{#content "main"}}
-<!--        Временное решение, для рендера страничек-->
-        <a href="pages/chat.hbs"></a>
-        <a href="pages/404.hbs"></a>
-        <a href="pages/505.hbs"></a>
         <div class="grid">
             <div class="row row-center">
                 <div class="column col-xs-12">
@@ -53,6 +54,6 @@ link:
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     {{/content}}
 {{/extend}}
