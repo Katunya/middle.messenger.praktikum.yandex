@@ -2,9 +2,10 @@
   "name": "practicum.yandex",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/pages/index.hbs --no-cache --open",
-    "build": "parcel build src/pages/index.hbs",
-    "server": "node server.js"
+    "parcel: start": "parcel src/pages/index.hbs --no-cache --open",
+    "parcel: build": "parcel build src/pages/index.hbs",
+    "server": "node server.js",
+    "start": "npm run server && npm run parcel: build"
   },
   "author": "Katunya",
   "license": "ISC",
