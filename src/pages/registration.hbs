@@ -12,42 +12,49 @@ inputs:
 - input:
     label: Почта
     id: mail
+    name: email
     type: email-registration
     error: Неверный email
 - input:
     label: Логин
     id: login-registration
+    name: login
     type: text
     error: Неверный логин
 - input:
     label: Имя
     id: first_name-registration
+    name: first_name
     type: text
     error: Неверное имя
 - input:
     label: Фамилия
     id: second_name-registration
+    name: second_name
     type: text
     error: Неверная фамилия
 - input:
     label: Телефон
     id: phone-registration
+    name: phone
     type: phone
     error: Неверный телефон
 - input:
     label: Пароль
     id: password-registration
+    name: password
     type: password
     error: Короткий пароль
 - input:
     label: Пароль (ещё раз)
     id: password-registration-replay
+    name: password
     type: password
     error: Пароли не совпадают
 
 button:
     id: button-registration
-    className: 'registration-button'
+    className: registration-button
     text: Зарегистрироваться
     type: submit
 

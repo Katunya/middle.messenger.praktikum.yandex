@@ -26,20 +26,20 @@ fields:
         type: text
     - profile-field:
         label: Имя
-        id: name-profile
-        name: name
+        id: first_name-profile
+        name: first_name
         value: Иван
         type: text
     - profile-field:
         label: Фамилия
-        id: surname-profile
-        name: surname
+        id: second_name-profile
+        name: second_name
         value: Иванов
         type: text
     - profile-field:
         label: Имя в чате
-        id: displayname-profile
-        name: displayname
+        id: display_name-profile
+        name: display_name
         value: Иван
         type: text
     - profile-field:
@@ -50,16 +50,16 @@ fields:
         type: tel
 
 links:
-- link:
-    href: './change-profile.hbs'
-    text: Изменить данные
-- link:
-    href: './change-password.hbs'
-    text: Изменить пароль
-- link:
-    href: './chat.hbs'
-    className: link-error
-    text: Выйти
+    - link:
+        href: './change-profile.hbs'
+        text: Изменить данные
+    - link:
+        href: './change-password.hbs'
+        text: Изменить пароль
+    - link:
+        href: './chat.hbs'
+        className: link-error
+        text: Выйти
 ---
 
 {{#extend "main"}}
