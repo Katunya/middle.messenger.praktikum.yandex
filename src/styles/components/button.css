@@ -1,0 +1,39 @@
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--btn-font-size-base);
+    line-height: var(--btn-line-height-base);
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: var(--btn-border-radius-base);
+    cursor: pointer;
+    user-select: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    touch-action: manipulation;
+
+    padding: 12px 24px;
+
+    background-color: var(--btn-bg);
+    border: var(--btn-border-width-base) solid var(--btn-bg);
+    color: var(--btn-text);
+
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+.button:active {
+    background-color: var(--btn-active-bg);
+}
+
+.button-save {
+    margin-top: 60px;
+}

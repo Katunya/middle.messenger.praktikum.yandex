@@ -1,0 +1,36 @@
+.sidebar-content {
+    background: var(--sidebar-background);
+
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+
+.sidebar-arrow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    height: 100%;
+}
+
+
+.sidebar-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    background-color: var(--emerald-color-02);
+    color: var(--white);
+}

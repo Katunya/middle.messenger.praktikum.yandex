@@ -1,0 +1,28 @@
+---
+meta:
+    description: Ошибка 505
+    title: 505
+
+styles: ../styles/pages/error.css
+
+link:
+    href: './chat.hbs'
+    text: На главную
+---
+{{#extend "main"}}
+    {{#content "main"}}
+        <main class="main">
+            <div class="grid">
+                <div class="row row-center">
+                    <div class="col col-xs-12">
+                        <div class="error">
+                            <h2 class="error-title">505</h2>
+                            <p class="error-description">Ой, что-то сломалось! Не переживайте - мы уже чиним</p>
+                            {{>link}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    {{/content}}
+{{/extend}}

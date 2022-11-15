@@ -1,0 +1,103 @@
+---
+meta:
+    description: Страница профиля
+    title: Profile
+
+styles: ../styles/pages/profile.css
+
+sidebar:
+    href: ./chat.hbs
+
+name-user:
+    name: Иван
+
+fields:
+    - profile-field:
+        label: Почта
+        id: email-profile
+        name: email
+        value: pochta@yandex.ru
+        type: email
+    - profile-field:
+        label: Логин
+        id: login-profile
+        name: login
+        value: ivanivanov
+        type: text
+    - profile-field:
+        label: Имя
+        id: first_name-profile
+        name: first_name
+        value: Иван
+        type: text
+    - profile-field:
+        label: Фамилия
+        id: second_name-profile
+        name: second_name
+        value: Иванов
+        type: text
+    - profile-field:
+        label: Имя в чате
+        id: display_name-profile
+        name: display_name
+        value: Иван
+        type: text
+    - profile-field:
+        label: Телефон
+        id: phone-profile
+        name: phone
+        value: +7 (909) 967 30 30
+        type: tel
+
+links:
+    - link:
+        href: './change-profile.hbs'
+        text: Изменить данные
+    - link:
+        href: './change-password.hbs'
+        text: Изменить пароль
+    - link:
+        href: './chat.hbs'
+        className: link-error
+        text: Выйти
+---
+
+{{#extend "main"}}
+    {{#content "main"}}
+        <main class="main">
+            <section class="grid">
+                <div class="row">
+                    <div class="column column-xs-1">
+                        {{>sidebar}}
+                    </div>
+                    <div class="row row-center">
+                        <div class="column column-xs-7">
+                        <form class="profile-form">
+                            <fieldset>
+                                {{>avatar-upload}}
+                                <h3 class="profile-name">{{name-user.name}}</h3>
+                                <div>
+                                    <ul class="profile-form-list">
+                                        {{#each fields}}
+                                            <li class="profile-form-item">
+                                                {{>profile-field}}
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                    <ul class="profile-form-links">
+                                        {{#each links}}
+                                            <li class="profile-form-link">
+                                                {{>link}}
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    {{/content}}
+{{/extend}}

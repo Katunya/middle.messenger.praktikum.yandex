@@ -1,0 +1,15 @@
+@import '../index.css';
+
+/* components */
+@import '../components/button.css';
+@import '../components/input.css';
+@import '../components/link.css';
+@import '../components/dialog.css';
+@import '../components/sidebar.css';
+@import '../components/profile-form.css';
+@import '../components/avatar-upload.css';
+
+.profile-name {
+    margin-bottom: 60px;
+    text-align: center;
+}

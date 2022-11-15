@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{{#block "head"}}
+    <head>
+        {{>meta}}
+        {{#if styles}}
+            <link href="{{styles}}" rel="stylesheet" />
+        {{/if}}
+    </head>
+{{/block}}
+
+{{#block "body"}}
+    <body>
+    {{#block "main"}}{{/block}}
+    {{#if scripts}}
+        <script src="{{scripts}}" type="module"></script>
+    {{/if}}
+    </body>
+{{/block}}
+</html>

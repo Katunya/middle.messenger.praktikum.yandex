@@ -1,0 +1,75 @@
+.dialog {
+    display: flex;
+
+    border-top: 1px solid var(--border-color);
+    padding: 12px 10px;
+
+    gap: 10px;
+
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.dialog:hover {
+    background-color: var(--dialog-hover)
+}
+
+.dialog:active {
+    background-color: var(--dialog-active)
+}
+
+.dialog-messages {
+    display: flex;
+}
+
+.dialog-title {
+    flex-grow: 1;
+}
+
+.dialog-time {
+    font-size: var(--font-size-xxs);
+    line-height: var(--line-height-xxs);
+
+    color: var(--midnight-color-02);
+}
+
+.dialog-messages {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-xs);
+    color: var(--midnight-color-03);
+}
+
+.dialog-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge {
+    border-radius: 64px;
+
+    align-items: center;
+    display: flex;
+    font-weight: var(--font-weight-semibold);
+
+    width: fit-content;
+
+    color: var(--white);
+
+    font-size: var(--font-size-xs);
+    line-height: 16px;
+
+    height: 20px;
+    padding: 0 7px;
+
+    background-color: var(--emerald-color-01);
+}
+
+.dialog-name {
+    margin-bottom: 4px;
+    color: var(--midnight-color-02);
+
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+}

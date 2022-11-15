@@ -1,0 +1,14 @@
+{{#if input}}
+    <div class="input-container">
+        {{#if input.label}}<label class="input-label {{input.className}}">{{input.label}}</label>{{/if}}
+            <input
+                    class="input"
+                    id="{{input.id}}"
+                    type="{{input.type}}"
+                    name="{{input.name}}"
+                    required="{{input.required}}"
+                    placeholder="{{input.placeholder}}"
+                    value="{{input.value}}"
+            >
+    </div>
+{{/if}}

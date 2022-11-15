@@ -1,0 +1,65 @@
+---
+styles: ../styles/pages/chat.css
+
+meta:
+    description: Чат
+    title: Chats
+
+dialogs:
+    - dialog:
+        name: 'Андрей'
+        mute: false
+        myAnswer: false
+        message: 'Изображение'
+        time: '10:49'
+        count: 2
+        img:
+            src: '../imgs/userpic.png'
+            alt: 'аватарка пользователя'
+    - dialog:
+        name: 'Киноклуб'
+        mute: true
+        myAnswer: true
+        message: 'стикер'
+        time: '12:00'
+        count: 0
+        img:
+            src: '../imgs/userpic.png'
+            alt: 'аватарка пользователя'
+
+input:
+    placeholder: Поиск
+
+link:
+    href: './profile.hbs'
+    text: Профиль
+    className: profile-link
+    arrow: true
+---
+
+{{#extend "main"}}
+    {{#content "main"}}
+        <main class="main">
+            <section class="grid">
+                <div class="row">
+                    <div class="column column-xs-3">
+                        <div class="sidebar-content">
+                            {{>link}}
+                            {{>input}}
+                            <ul>
+                                {{#each dialogs}}
+                                    <li>
+                                        {{>dialog}}
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column column-xs-9">
+                        <h3 class="chat-title">Выберите чат, чтобы отправить сообщение</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    {{/content}}
+{{/extend}}

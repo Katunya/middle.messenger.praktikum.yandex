@@ -1,0 +1,17 @@
+@import '../index.css';
+@import '../components/link.css';
+
+.error {
+    text-align: center;
+}
+
+.error-title {
+    font-size: 165px;
+    line-height: 209px;
+    color: var(--emerald-color-01)
+}
+
+.error-description {
+    margin-bottom: 40px;
+    color: var(--midnight-color-02);
+}

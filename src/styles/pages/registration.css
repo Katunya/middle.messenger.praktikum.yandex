@@ -1,0 +1,16 @@
+@import '../index.css';
+
+/* components */
+@import '../components/button.css';
+@import '../components/input.css';
+@import '../components/link.css';
+@import '../components/dialog.css';
+
+.registration-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.registration-button {
+    margin-bottom: 14px;
+}

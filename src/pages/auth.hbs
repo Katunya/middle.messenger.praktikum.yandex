@@ -1,0 +1,59 @@
+---
+
+meta:
+    description: Страница авторизации
+    title: Authorization
+
+styles: ../styles/pages/auth.css
+
+button:
+    text: Войти
+    type: submit
+    id: button-auth
+    className: auth-button
+
+inputs:
+    - input:
+        label: Логин
+        id: login-profile
+        name: login
+        type: text
+        error: Неверный логин
+        placeholder: Введите логин
+    - input:
+        label: Пароль
+        id: password-profile
+        name: password
+        type: password
+        error: Неверный пароль
+        placeholder: Введите пароль
+
+link:
+    text: Нет аккаунта?
+    href: './registration.hbs'
+
+---
+{{#extend "main"}}
+    {{#content "main"}}
+        <div class="grid">
+            <div class="row row-center">
+                <div class="column col-xs-12">
+                    <div class="form-wrapper">
+                        <form
+                                action="/"
+                                method="POST"
+                                id="login"
+                                class="form">
+                            <h4>Вход</h4>
+                            {{#each inputs}}
+                                {{>input}}
+                            {{/each}}
+                            {{>button}}
+                        </form>
+                        {{>link}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}

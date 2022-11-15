@@ -1,0 +1,21 @@
+{{#if dialog}}
+    <a class="dialog {{dialog.className}}" href="{{companion.href}}">
+        <img src={{dialog.img.src}} alt={{dialog.img.alt}}>
+        <div class="dialog-title">
+            <h4 class="dialog-name">{{dialog.name}}</h4>
+            <div class="dialog-messages">
+                {{#if dialog.myAnswer}}
+                    <p class="dialog-myAnswer">Вы:</p>
+                {{/if}}
+                <p class="dialog-message">{{dialog.message}}</p>
+            </div>
+        </div>
+
+        <div class="dialog-subtitle">
+            <time datetime="{{dialog.time}}" class="dialog-time">{{dialog.time}}</time>
+            {{#if dialog.count}}
+                    <span class="badge {{dialog.mute}}">{{dialog.count}}</span>
+            {{/if}}
+        </div>
+    </a>
+{{/if}}
